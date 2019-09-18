@@ -13,6 +13,7 @@ class Colors extends React.Component {
                             type="radio"
                             value="#287233"
                             name="colors"
+                            checked = {this.props.color==="#287233"}                            
                         />
                         Claro</label>
                 </div>
@@ -24,6 +25,7 @@ class Colors extends React.Component {
                             type="radio"
                             value="#4d0000"
                             name="colors"
+                            checked = {this.props.color==="#4d0000"} 
                         />
                         Oscuro </label>
                 </div>

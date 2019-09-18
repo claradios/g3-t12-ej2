@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      color: ''
+      color: "#287233",      
     }
     this.handleChange = this.handleChange.bind(this);
     this.setLocalSt = this.setLocalSt.bind(this);
@@ -42,7 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" style={{backgroundColor:`${this.state.color}`}}>
-       <Colors handleChange = {this.handleChange}></Colors>
+       <Colors handleChange = {this.handleChange} color ={this.state.color}></Colors>
       </div>
     );
   }
