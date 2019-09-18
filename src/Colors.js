@@ -8,9 +8,10 @@ class Colors extends React.Component {
                 <div>
                     <label htmlFor="color1">
                         <input
+                            onChange={this.props.handleChange}
                             id="color1"
                             type="radio"
-                            value="color1"
+                            value="#287233"
                             name="colors"
                         />
                         Claro</label>
@@ -18,9 +19,10 @@ class Colors extends React.Component {
                 <div>
                     <label htmlFor="color2">
                         <input
+                            onChange={this.props.handleChange}
                             id="color2"
                             type="radio"
-                            value="color2"
+                            value="#4d0000"
                             name="colors"
                         />
                         Oscuro </label>
