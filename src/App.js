@@ -29,13 +29,11 @@ class App extends React.Component {
   getLocalSt (){
     const saveColor = JSON.parse(localStorage.getItem('color'));
     this.setState (()=>{
-      if(saveColor === null) {
-        return (console.log('no hay información guardada en LS'))
-      } else {
+      if(saveColor !== null) {
         return ({
           color : saveColor
         })
-      }
+      } 
     })
   }
 
